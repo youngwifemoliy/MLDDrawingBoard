@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MLDDrawingBoard.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIView *view = [[MLDDrawingBoard alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
     
 }
 
